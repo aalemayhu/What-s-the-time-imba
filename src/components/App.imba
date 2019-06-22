@@ -1,12 +1,17 @@
+var labelForTime = "..."
+
+def onInterval
+	var date = Date.new
+	let hours = date.getHours()
+	let minutes = date.getMinutes()
+	let seconds = date.getSeconds()
+	labelForTime = "{hours}:{minutes}:{seconds}"
+
+Imba.setInterval 1000, do onInterval
+
 export tag App
 	def render
 		<self>
-			<div.header>
-				<img src="./imba-logo.png" width=200>
-				<h1.title> "START NOW"
 			<div.content>
-				<p.title> "How to start"
-				<p.desc> "Go to " 
-					<code> "./src/client.imba"
-					" and open it in your code editor." 
-				<p.desc2> "Now, start make something good."
+				<div.container>
+					<h1> "{labelForTime}"
