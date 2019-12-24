@@ -21,7 +21,6 @@ body {
 
   -ms-user-select: none;
   user-select: none;
-  font-family: 'Baskervville', serif;
 }
 ###
 export tag App
