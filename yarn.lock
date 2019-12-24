@@ -2104,10 +2104,9 @@ iferr@^0.1.5:
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
   integrity sha1-xg7taebY/bazEEofy8ocGS3FtQE=
 
-imba@1.5.1:
+"imba@git+https://git@github.com/imba/imba.git":
   version "1.5.1"
-  resolved "https://registry.yarnpkg.com/imba/-/imba-1.5.1.tgz#12cd04d4d0f177fce7511fb92be99b3701400292"
-  integrity sha512-yZe/pVGV/K0y5RW0/NA2OSCIbHdvOK7SdvuVKoDYIW+p4E5Wx8ycXnR32upX/Dw3VuV6LcLDG24MC4gZRrBLZw==
+  resolved "git+https://git@github.com/imba/imba.git#77225ef7474ca3bbcfac26749f6e2a6e2932a3ed"
 
 import-local@2.0.0, import-local@^2.0.0:
   version "2.0.0"
