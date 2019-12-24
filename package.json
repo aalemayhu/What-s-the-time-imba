@@ -22,6 +22,6 @@
     "normalize-scss": "^7.0.1"
   },
   "dependencies": {
-    "imba": "1.4.1"
+    "imba": "1.5.1"
   }
 }
