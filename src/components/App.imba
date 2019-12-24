@@ -1,16 +1,7 @@
-var labelForTime = "..."
-
-def onInterval
-	var date = Date.new
-	let hours = date.getHours()
-	let minutes = date.getMinutes()
-	let seconds = date.getSeconds()
-	labelForTime = "{hours}:{minutes}:{seconds}"
-
-Imba.setInterval 1000, do onInterval
-
 ### css
 body {
+	margin: 0;
+	padding: 0;
 	display: grid;
 	width: 100vw;
 	height: 100vh;
@@ -31,9 +22,22 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-
 ###
 export tag App
+	prop labelForTime default: '...'
+
+	def leadingZero n
+		return "0{n}" unless n > 9
+		n
+
+	def setup
+		Imba.setInterval 1000, do
+			var date = Date.new
+			let hours = leadingZero(date.getHours())
+			let minutes = leadingZero(date.getMinutes())
+			let seconds = leadingZero(date.getSeconds())
+			labelForTime = "{hours}:{minutes}:{seconds}"
+
 	def render
 		<self>
 			<div.content>
