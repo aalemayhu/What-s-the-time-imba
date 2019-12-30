@@ -22,6 +22,6 @@
     "normalize-scss": "^7.0.1"
   },
   "dependencies": {
-    "imba": "git+https://git@github.com/imba/imba.git"
+    "imba": "1.5.2"
   }
 }
